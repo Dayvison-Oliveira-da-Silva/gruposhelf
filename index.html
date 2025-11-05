@@ -24,7 +24,8 @@
     body{
       margin:0; font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
       color:var(--ink); background:var(--bg); line-height:1.6; -webkit-font-smoothing:antialiased;
-      padding-top:var(--nav-h)
+      padding-top:var(--nav-h);
+      
     }
     a{color:inherit; text-decoration:none}
     img{max-width:100%; display:block}
@@ -51,7 +52,7 @@
     /* HERO */
     .hero{margin-top:18px}
     .banner{background:#fff; border:1px solid var(--line); border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow)}
-    .banner .img{height:260px; background:#eaf2ff url('BANNER1.png') center/cover no-repeat}
+    .banner .img{height:768px; width: 1366px;background:#eaf2ff url('BANNER1.png') center/cover no-repeat}
     .banner .bar{padding:14px 18px; border-top:1px solid var(--line); background:#fff}
     .breadcrumbs{color:var(--muted); font-size:14px}
     .pageTitle{font-size:28px; font-weight:800}
@@ -73,7 +74,7 @@
     .adv .right{grid-column:span 6}
     .check{display:flex; gap:10px; align-items:flex-start}
     .check .dot{width:22px; height:22px; border-radius:999px; background:var(--brand); color:#fff; font-weight:900; display:grid; place-items:center}
-    .mock{background:#eaf2ff url('quemsomos.jpg') center/cover no-repeat; border:1px solid var(--line); border-radius:22px; height:300px; display:grid; place-items:center; color:var(--muted)}
+    .mock{background:#eaf2ff url('quemsomosoculto.jpg') center/cover no-repeat; border:1px solid var(--line); border-radius:22px; height:300px; display:grid; place-items:center; color:var(--muted)}
 
     /* DIFERENCIAIS (grid desktop) */
     .wrap-soft{background:var(--blue-soft); border:1px solid var(--line); border-radius:22px; padding:18px; box-shadow:var(--shadow)}
@@ -172,11 +173,10 @@
       </ul>
     </div>
   </nav>
-
   <!-- HERO / BANNER -->
   <header id="top" class="hero con">
     <div class="banner">
-      <div class="img"><!-- troque por BANNER_GRUPO_SHELF.jpg --></div>
+      <div ><img src="BANNER1.png" alt=""></div>
       <div class="bar">
         <div class="breadcrumbs">Home · Institucional</div>
         <div class="pageTitle">Grupo Shelf</div>
