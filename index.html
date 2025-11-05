@@ -1,160 +1,624 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Grupo Shelf — Institucional</title>
-  <meta name="description" content="Site institucional do Grupo Shelf — quem somos, propósito, áreas de atuação, perguntas frequentes e contato institucional."/>
-  <link rel="icon" href="/favicon.png" type="image/png">
+  <title>"Grupo Shelf — Distribuição que move a saúde"</title>
+  <meta property="og:title" content="Grupo Shelf — Distribuição que move a saúde">
+  <meta name="description"
+    content="Site institucional do Grupo Shelf — quem somos, propósito, áreas de atuação, perguntas frequentes e contato institucional." />
+  <link rel="icon" href="favlogo.png" type="image/png">
+  <!-- Canonical (URL preferida da página) -->
+<link rel="canonical" href="https://gruposhelf.com/">
+
+<!-- Idioma e autoria (opcional) -->
+<meta name="language" content="pt-BR">
+<meta name="author" content="Grupo Shelf">
+
+<!-- Indexação -->
+<meta name="robots" content="index,follow,max-image-preview:large">
+
+<!-- Open Graph (WhatsApp/Facebook/LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Grupo Shelf">
+<meta property="og:url" content="https://gruposhelf.com/">
+<meta property="og:title" content="Grupo Shelf — Distribuição que move a saúde">
+<meta property="og:description" content="Eficiência, disponibilidade e confiança na distribuição odontológica e hospitalar. Conheça o Grupo Shelf.">
+<meta property="og:image" content="https://gruposhelf.com/og-banner.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Marca Grupo Shelf em fundo institucional">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Grupo Shelf — Distribuição que move a saúde">
+<meta name="twitter:description" content="Eficiência, disponibilidade e confiança na distribuição odontológica e hospitalar.">
+<meta name="twitter:image" content="https://gruposhelf.com/og-banner.jpg">
+
+<!-- Favicons / PWA (ajuste os caminhos) -->
+<link rel="icon" type="image/png" sizes="32x32" href="favlogo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favlogo.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favlogo.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#16361F"> <!-- verde institucional -->
+
+<!-- Dados estruturados (Google) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Grupo Shelf",
+  "url": "https://gruposhelf.com/",
+  "logo": "https://gruposhelf.com/logo.png",
+  "sameAs": [
+    "https://www.instagram.com/gruposhelf",
+    "https://www.facebook.com/gruposhelf"
+  ],
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "contactType": "Institutional",
+    "email": "gruposhelf@gmail.com",
+    "areaServed": "BR",
+    "availableLanguage": ["pt-BR"]
+  }]
+}
+</script>
 
   <!-- Ionicons (ícone do menu mobile) -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
   <style>
-    :root{
-      --ink:#0b1220; --muted:#77819a;
-      --brand:#2E7BFF; --brand-600:#1f5be0; --accent:#2DE38F;
-      --bg:#F7FAFF; --panel:#fff; --line:#E8EEF7; --soft:#F1F6FF; --blue-soft:#EEF5FF;
-      --radius:18px; --radius-lg:22px; --shadow:0 12px 40px rgba(20,40,120,.12);
-      --w:1180px; --nav-h:74px;
+    :root {
+      --ink: #0b1220;
+      --muted: #77819a;
+      --brand: #2E7BFF;
+      --brand-600: #1f5be0;
+      --accent: #2DE38F;
+      --bg: #F7FAFF;
+      --panel: #fff;
+      --line: #E8EEF7;
+      --soft: #F1F6FF;
+      --blue-soft: #EEF5FF;
+      --radius: 18px;
+      --radius-lg: 22px;
+      --shadow: 0 12px 40px rgba(20, 40, 120, .12);
+      --w: 1180px;
+      --nav-h: 74px;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      color:var(--ink); background:var(--bg); line-height:1.6; -webkit-font-smoothing:antialiased;
-      padding-top:var(--nav-h);
-      
+
+    * {
+      box-sizing: border-box
     }
-    a{color:inherit; text-decoration:none}
-    img{max-width:100%; display:block}
+
+    html,
+    body {
+      height: 100%
+    }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding-top: var(--nav-h);
+
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    img {
+      max-width: 100%;
+      display: block
+    }
 
     /* NAV */
-    .nav{position:fixed; inset:0 0 auto 0; height:var(--nav-h); z-index:40; background:#fff; border-bottom:1px solid var(--line)}
-    .wrap{max-width:var(--w); margin:0 auto; padding:0 20px; height:100%; display:flex; align-items:center; gap:18px}
-    .logo{display:flex; align-items:center; gap:10px}
-    .logo-img{ height:36px; width:auto; display:block; object-fit:contain }
+    .nav {
+      position: fixed;
+      inset: 0 0 auto 0;
+      height: var(--nav-h);
+      z-index: 40;
+      background: #fff;
+      border-bottom: 1px solid var(--line)
+    }
 
-    .menu-btn{ display:none; align-items:center; justify-content:center; width:42px; height:42px; border:1px solid var(--line); border-radius:12px; background:#fff; cursor:pointer; margin-left:auto; box-shadow:0 6px 16px rgba(0,0,0,.05) }
-    .menu-btn ion-icon{ font-size:22px; }
-    .nav ul.menu{margin:0 0 0 auto; padding:0; list-style:none; display:flex; gap:18px}
-    .nav a{font-weight:700}
+    .wrap {
+      max-width: var(--w);
+      margin: 0 auto;
+      padding: 0 20px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 18px
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .logo-img {
+      height: 36px;
+      width: auto;
+      display: block;
+      object-fit: contain
+    }
+
+    .menu-btn {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      cursor: pointer;
+      margin-left: auto;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, .05)
+    }
+
+    .menu-btn ion-icon {
+      font-size: 22px;
+    }
+
+    .nav ul.menu {
+      margin: 0 0 0 auto;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 18px
+    }
+
+    .nav a {
+      font-weight: 700
+    }
 
     /* COMMON */
-    section{scroll-margin-top:calc(var(--nav-h) + 10px)}
-    .con{max-width:var(--w); margin:0 auto; padding:0 20px}
-    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:18px}
-    .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:18px}
-    h1,h2,h3{line-height:1.2; margin:0 0 10px}
-    p{margin:0 0 10px}
+    section {
+      scroll-margin-top: calc(var(--nav-h) + 10px)
+    }
+
+    .con {
+      max-width: var(--w);
+      margin: 0 auto;
+      padding: 0 20px
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.2;
+      margin: 0 0 10px
+    }
+
+    p {
+      margin: 0 0 10px
+    }
 
     /* HERO */
-    .hero{margin-top:18px}
-    .banner{background:#fff; border:1px solid var(--line); border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow)}
-    .banner .img{height:768px; width: 1366px;background:#eaf2ff url('BANNER1.png') center/cover no-repeat}
-    .banner .bar{padding:14px 18px; border-top:1px solid var(--line); background:#fff}
-    .breadcrumbs{color:var(--muted); font-size:14px}
-    .pageTitle{font-size:28px; font-weight:800}
+    .hero {
+      margin-top: 18px
+    }
+
+    .banner {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow)
+    }
+
+    .banner .img {
+      height: 768px;
+      width: 1366px;
+      background: #eaf2ff url('BANNER1.png') center/cover no-repeat
+    }
+
+    .banner .bar {
+      padding: 14px 18px;
+      border-top: 1px solid var(--line);
+      background: #fff
+    }
+
+    .breadcrumbs {
+      color: var(--muted);
+      font-size: 14px
+    }
+
+    .pageTitle {
+      font-size: 28px;
+      font-weight: 800
+    }
 
     /* ===== CARROSSEL ÁREAS (infinito) ===== */
-    .logos-wrap{position:relative; overflow:hidden; margin:16px 0 8px}
-    .logos-wrap:before, .logos-wrap:after{content:""; position:absolute; top:0; bottom:0; width:48px; pointer-events:none; z-index:2; background:linear-gradient(to right, var(--bg), transparent)}
-    .logos-wrap:after{ right:0; left:auto; transform:scaleX(-1) }
-    .logos-track{display:flex; gap:14px; width:max-content; animation: logos-roll 28s linear infinite}
-    @media (prefers-reduced-motion:reduce){ .logos-track{ animation:none } }
-    @keyframes logos-roll{ from{transform:translateX(0)} to{transform:translateX(-50%)} }
-    .logo-item{position:relative; flex:0 0 auto; width:140px; height:86px; border:1px solid var(--line); border-radius:16px; overflow:hidden; box-shadow:var(--shadow); background:#fff}
-    .logo-item .pic{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:grayscale(1) contrast(1) opacity(.9); transition:filter .2s, transform .2s, opacity .2s}
-    .logo-item:hover .pic{ filter:none; opacity:1; transform:scale(1.02) }
-    .logo-item .label{position:absolute; left:8px; right:8px; bottom:8px; padding:4px 8px; font-size:12px; font-weight:800; color:#0b1220; background:rgba(255,255,255,.92); border:1px solid rgba(232,238,247,.85); border-radius:999px; text-align:center; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+    .logos-wrap {
+      position: relative;
+      overflow: hidden;
+      margin: 16px 0 8px
+    }
+
+    .logos-wrap:before,
+    .logos-wrap:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 48px;
+      pointer-events: none;
+      z-index: 2;
+      background: linear-gradient(to right, var(--bg), transparent)
+    }
+
+    .logos-wrap:after {
+      right: 0;
+      left: auto;
+      transform: scaleX(-1)
+    }
+
+    .logos-track {
+      display: flex;
+      gap: 14px;
+      width: max-content;
+      animation: logos-roll 28s linear infinite
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      .logos-track {
+        animation: none
+      }
+    }
+
+    @keyframes logos-roll {
+      from {
+        transform: translateX(0)
+      }
+
+      to {
+        transform: translateX(-50%)
+      }
+    }
+
+    .logo-item {
+      position: relative;
+      flex: 0 0 auto;
+      width: 140px;
+      height: 86px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: #fff
+    }
+
+    .logo-item .pic {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(1) contrast(1) opacity(.9);
+      transition: filter .2s, transform .2s, opacity .2s
+    }
+
+    .logo-item:hover .pic {
+      filter: none;
+      opacity: 1;
+      transform: scale(1.02)
+    }
+
+    .logo-item .label {
+      position: absolute;
+      left: 8px;
+      right: 8px;
+      bottom: 8px;
+      padding: 4px 8px;
+      font-size: 12px;
+      font-weight: 800;
+      color: #0b1220;
+      background: rgba(255, 255, 255, .92);
+      border: 1px solid rgba(232, 238, 247, .85);
+      border-radius: 999px;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis
+    }
 
     /* QUEM SOMOS */
-    .adv .left{grid-column:span 6}
-    .adv .right{grid-column:span 6}
-    .check{display:flex; gap:10px; align-items:flex-start}
-    .check .dot{width:22px; height:22px; border-radius:999px; background:var(--brand); color:#fff; font-weight:900; display:grid; place-items:center}
-    .mock{background:#eaf2ff url('quemsomosoculto.jpg') center/cover no-repeat; border:1px solid var(--line); border-radius:22px; height:300px; display:grid; place-items:center; color:var(--muted)}
+    .adv .left {
+      grid-column: span 6
+    }
+
+    .adv .right {
+      grid-column: span 6
+    }
+
+    .check {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start
+    }
+
+    .check .dot {
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      background: var(--brand);
+      color: #fff;
+      font-weight: 900;
+      display: grid;
+      place-items: center
+    }
+
+    .mock {
+      background: #eaf2ff url('Cosa.png') center/cover no-repeat;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      height: 300px;
+      display: grid;
+      place-items: center;
+      color: var(--muted)
+    }
 
     /* DIFERENCIAIS (grid desktop) */
-    .wrap-soft{background:var(--blue-soft); border:1px solid var(--line); border-radius:22px; padding:18px; box-shadow:var(--shadow)}
-    .cards{display:grid; grid-template-columns:repeat(4,1fr); gap:14px}
-    .mini{border-radius:16px; overflow:hidden; border:1px solid var(--line); background:#fff; box-shadow:var(--shadow); min-width:260px}
-    .mini .ph{height:140px; background:#e5eefc}
-    .mini .body{padding:12px}
-    .mini .meta{display:flex; gap:6px; align-items:center; color:#77819a; font-size:12px}
+    .wrap-soft {
+      background: var(--blue-soft);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 18px;
+      box-shadow: var(--shadow)
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px
+    }
+
+    .mini {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #fff;
+      box-shadow: var(--shadow);
+      min-width: 260px
+    }
+
+    .mini .ph {
+      height: 140px;
+      background: #e5eefc
+    }
+
+    .mini .body {
+      padding: 12px
+    }
+
+    .mini .meta {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      color: #77819a;
+      font-size: 12px
+    }
 
     /* DESTAQUES (grid desktop) */
-    .features{display:grid; grid-template-columns:repeat(4,1fr); gap:14px}
-    .feat{background:#fff; border:1px solid var(--line); border-radius:16px; padding:18px; text-align:center; box-shadow:var(--shadow); min-width:240px}
-    .media{
-      width:64px; height:64px; border-radius:14px; margin:0 auto 10px;
+    .features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px
+    }
+
+    .feat {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      min-width: 240px
+    }
+
+    .media {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+      margin: 0 auto 10px;
       background: var(--bg, linear-gradient(135deg, var(--brand), #7cc1ff));
-      background-size: cover; background-position:center; background-repeat:no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
     /* FAQ */
-    .faq .item{border:1px solid var(--line); border-radius:12px; background:#fff; overflow:hidden}
-    .faq summary{cursor:pointer; padding:12px 14px; font-weight:700; list-style:none}
-    .faq summary::-webkit-details-marker{display:none}
-    .faq .content{padding:0 14px 14px; color:var(--muted)}
-
-    /* FOOTER */
-    footer{margin:60px auto 40px; text-align:center; color:#77819a}
-
-    /* ===== MOBILE: drawer + carrosséis ===== */
-    @media (max-width:1020px){
-      html, body { overflow-x:hidden; }
-      .nav .wrap{ gap:12px; padding:0 12px; flex-wrap:nowrap; width:100%; min-width:0; }
-      .logo{ min-width:0; }
-      .logo-img{ height:28px; }
-
-      .menu-btn{ display:grid; }
-
-      .nav ul.menu{
-        position:fixed; top:calc(var(--nav-h) + 12px); right:12px; bottom:12px;
-        width:min(420px, 50vw, 90vw);
-        display:flex; flex-direction:column; gap:6px;
-        padding:14px; background:#fff; border:1px solid var(--line);
-        border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,.15);
-        transform:translateX(120%); transition:transform .28s ease;
-        font-size:15px;
-      }
-      .nav.open ul.menu{ transform:translateX(0) }
-      .nav ul.menu a{ padding:10px 4px; font-weight:800 }
-
-      /* DIFERENCIAIS -> carrossel horizontal */
-      .cards{
-        display:flex; gap:14px; overflow-x:auto; padding-bottom:6px;
-        scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;
-      }
-      .mini{ scroll-snap-align:center; flex:0 0 78%; }
-
-      /* DESTAQUES -> carrossel horizontal */
-      .features{
-        display:flex; gap:14px; overflow-x:auto; padding:2px 0 6px;
-        scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;
-      }
-      .feat{ scroll-snap-align:center; flex:0 0 78%; }
+    .faq .item {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      overflow: hidden
     }
 
-    body.menu-open{ overflow:hidden; }
+    .faq summary {
+      cursor: pointer;
+      padding: 12px 14px;
+      font-weight: 700;
+      list-style: none
+    }
+
+    .faq summary::-webkit-details-marker {
+      display: none
+    }
+
+    .faq .content {
+      padding: 0 14px 14px;
+      color: var(--muted)
+    }
+
+    /* FOOTER */
+    footer {
+      margin: 60px auto 40px;
+      text-align: center;
+      color: #77819a
+    }
+
+    /* ===== MOBILE: drawer + carrosséis ===== */
+    @media (max-width:1020px) {
+
+      html,
+      body {
+        overflow-x: hidden;
+      }
+
+      .nav .wrap {
+        gap: 12px;
+        padding: 0 12px;
+        flex-wrap: nowrap;
+        width: 100%;
+        min-width: 0;
+      }
+
+      .logo {
+        min-width: 0;
+      }
+
+      .logo-img {
+        height: 28px;
+      }
+
+      .menu-btn {
+        display: grid;
+      }
+
+      .nav ul.menu {
+        position: fixed;
+        top: calc(var(--nav-h) + 12px);
+        right: 12px;
+        bottom: 12px;
+        width: min(420px, 50vw, 90vw);
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding: 14px;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, .15);
+        transform: translateX(120%);
+        transition: transform .28s ease;
+        font-size: 15px;
+      }
+
+      .nav.open ul.menu {
+        transform: translateX(0)
+      }
+
+      .nav ul.menu a {
+        padding: 10px 4px;
+        font-weight: 800
+      }
+
+      /* DIFERENCIAIS -> carrossel horizontal */
+      .cards {
+        display: flex;
+        gap: 14px;
+        overflow-x: auto;
+        padding-bottom: 6px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .mini {
+        scroll-snap-align: center;
+        flex: 0 0 78%;
+      }
+
+      /* DESTAQUES -> carrossel horizontal */
+      .features {
+        display: flex;
+        gap: 14px;
+        overflow-x: auto;
+        padding: 2px 0 6px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .feat {
+        scroll-snap-align: center;
+        flex: 0 0 78%;
+      }
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
 
     /* ===== Ajuste MOBILE exclusivo da seção "Quem somos" ===== */
-    @media (max-width: 720px){
-      #sobre .grid{ display:block; }
-      #sobre .left.card, #sobre .right.card{
-        padding:16px 16px 18px; border-radius:18px; box-shadow:var(--shadow);
+    @media (max-width: 720px) {
+      #sobre .grid {
+        display: block;
       }
-      #sobre .left.card{ margin-bottom:12px; }
-      #sobre h2{ font-size:22px; line-height:1.25; margin-bottom:6px; }
-      #sobre p{ font-size:15px; line-height:1.7; }
-      #sobre .check{ gap:8px; }
-      #sobre .check .dot{ width:20px; height:20px; font-size:14px; }
-      #sobre .mock{ height:220px; border-radius:18px; }
+
+      #sobre .left.card,
+      #sobre .right.card {
+        padding: 16px 16px 18px;
+        border-radius: 18px;
+        box-shadow: var(--shadow);
+      }
+
+      #sobre .left.card {
+        margin-bottom: 12px;
+      }
+
+      #sobre h2 {
+        font-size: 22px;
+        line-height: 1.25;
+        margin-bottom: 6px;
+      }
+
+      #sobre p {
+        font-size: 15px;
+        line-height: 1.7;
+      }
+
+      #sobre .check {
+        gap: 8px;
+      }
+
+      #sobre .check .dot {
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
+      }
+
+      #sobre .mock {
+        height: 220px;
+        border-radius: 18px;
+      }
     }
   </style>
 </head>
+
 <body>
   <!-- NAV -->
   <nav class="nav">
@@ -176,7 +640,7 @@
   <!-- HERO / BANNER -->
   <header id="top" class="hero con">
     <div class="banner">
-      <div ><img src="BANNER1.png" alt=""></div>
+      <div><img src="BANNER1.png" alt=""></div>
       <div class="bar">
         <div class="breadcrumbs">Home · Institucional</div>
         <div class="pageTitle">Grupo Shelf</div>
@@ -189,25 +653,42 @@
     <div class="logos-wrap">
       <div class="logos-track">
         <!-- TRACK 1 -->
-        <div class="logo-item"><img class="pic" src="hospitais.jfif" alt="Hospiatais"><span class="label">Hospiatais</span></div>
-        <div class="logo-item"><img class="pic" src="academicos.png" alt="Ipsum"><span class="label">Est. de Odontologia</span></div>
-        <div class="logo-item"><img class="pic" src="academicos2.jfif" alt="Dolor"><span class="label">Est. da Saúde</span></div>
+        <div class="logo-item"><img class="pic" src="hospitais.jfif" alt="Hospiatais"><span
+            class="label">Hospiatais</span></div>
+        <div class="logo-item"><img class="pic" src="academicos.png" alt="Ipsum"><span class="label">Est. de
+            Odontologia</span></div>
+        <div class="logo-item"><img class="pic" src="academicos2.jfif" alt="Dolor"><span class="label">Est. da
+            Saúde</span></div>
         <div class="logo-item"><img class="pic" src="dentistas.png" alt="Sit"><span class="label">Dentistas</span></div>
-        <div class="logo-item"><img class="pic" src="fisio.jfif" alt="Amet"><span class="label">Fisioterapeutas</span></div>
-        <div class="logo-item"><img class="pic" src="cozinha.jfif" alt="Consectetur"><span class="label">Cozinha Industrial</span></div>
-        <div class="logo-item"><img class="pic" src="salao.jfif" alt="Adipiscing"><span class="label">Salões de Beleza</span></div>
-        <div class="logo-item"><img class="pic" src="mercado.jfif" alt="Elit"><span class="label">Super Mercados</span></div>
-        <div class="logo-item"><img class="pic" src="drogaria.jfif" alt="Nunc"><span class="label">Drogarias</span></div>
+        <div class="logo-item"><img class="pic" src="fisio.jfif" alt="Amet"><span class="label">Fisioterapeutas</span>
+        </div>
+        <div class="logo-item"><img class="pic" src="cozinha.jfif" alt="Consectetur"><span class="label">Cozinha
+            Industrial</span></div>
+        <div class="logo-item"><img class="pic" src="salao.jfif" alt="Adipiscing"><span class="label">Salões de
+            Beleza</span></div>
+        <div class="logo-item"><img class="pic" src="mercado.jfif" alt="Elit"><span class="label">Super Mercados</span>
+        </div>
+        <div class="logo-item"><img class="pic" src="drogaria.jfif" alt="Nunc"><span class="label">Drogarias</span>
+        </div>
         <!-- TRACK 2 (cópia para loop) -->
-        <div class="logo-item" aria-hidden="true"><img class="pic" src="hospitais.jfif" alt=""><span class="label">Hospitais</span></div>
-        <div class="logo-item" aria-hidden="true"><img class="pic" src="academicos.png" alt=""><span class="label">Est. de Odontologia</span></div>
-        <div class="logo-item" aria-hidden="true"><img class="pic" src="academicos2.jfif" alt=""><span class="label">Est. da Saúde</span></div>
-        <div class="logo-item" aria-hidden="true"><img class="pic" src="dentistas.png" alt=""><span class="label">Dentistas</span></div>
-        <div class="logo-item" aria-hidden="true"><img class="pic" src="fisio.jfif" alt=""><span class="label">Fisioterapeutas</span></div>
-        <div class="logo-item" aria-hidden="true"><img class="pic" src="cozinha.jfif" alt=""><span class="label">Cozinha Industrial</span></div>
-        <div class="logo-item" aria-hidden="true"><img class="pic" src="salao.jfif" alt=""><span class="label">Salões de Beleza</span></div>
-        <div class="logo-item" aria-hidden="true"><img class="pic" src="mercado.jfif" alt=""><span class="label">Super Mercados</span></div>
-        <div class="logo-item" aria-hidden="true"><img class="pic" src="drogaria.jfif" alt=""><span class="label">Drogarias</span></div>
+        <div class="logo-item" aria-hidden="true"><img class="pic" src="hospitais.jfif" alt=""><span
+            class="label">Hospitais</span></div>
+        <div class="logo-item" aria-hidden="true"><img class="pic" src="academicos.png" alt=""><span class="label">Est.
+            de Odontologia</span></div>
+        <div class="logo-item" aria-hidden="true"><img class="pic" src="academicos2.jfif" alt=""><span
+            class="label">Est. da Saúde</span></div>
+        <div class="logo-item" aria-hidden="true"><img class="pic" src="dentistas.png" alt=""><span
+            class="label">Dentistas</span></div>
+        <div class="logo-item" aria-hidden="true"><img class="pic" src="fisio.jfif" alt=""><span
+            class="label">Fisioterapeutas</span></div>
+        <div class="logo-item" aria-hidden="true"><img class="pic" src="cozinha.jfif" alt=""><span class="label">Cozinha
+            Industrial</span></div>
+        <div class="logo-item" aria-hidden="true"><img class="pic" src="salao.jfif" alt=""><span class="label">Salões de
+            Beleza</span></div>
+        <div class="logo-item" aria-hidden="true"><img class="pic" src="mercado.jfif" alt=""><span class="label">Super
+            Mercados</span></div>
+        <div class="logo-item" aria-hidden="true"><img class="pic" src="drogaria.jfif" alt=""><span
+            class="label">Drogarias</span></div>
       </div>
     </div>
   </section>
@@ -217,20 +698,46 @@
     <div class="grid">
       <div class="left card">
         <h2>Quem somos</h2>
-        <p>O <strong>Grupo Shelf</strong> atua em diversos ramos do mercado na região Norte, com <strong>cinco unidades</strong> de negócio comercialmente consolidadas. Nossa missão é <strong>desenvolver marcas e ampliar o acesso a soluções essenciais</strong>, conectando fornecedores, logística e atendimento com eficiência, qualidade e confiança. Trabalhamos para gerar valor sustentável a clientes, parceiros e à comunidade, mantendo foco em disponibilidade, preço justo e serviço responsável. <br>
-          <strong>#GrupoShelf #Distribuição #Saúde</strong></p>
-        <!-- 
-        <div style="display:grid; gap:10px; margin-top:10px">
-          <div class="check"><div ><strong>1.</strong></div><p>Shelf Distribuidora</p></div>
-          <div class="check"><div ><strong>2.</strong></div><p>Shelf Dental Med</p></div>
-          <div class="check"><div ><strong>3.</strong></div><p>Soberana Distribuidora</p></div>
-          <div class="check"><div ><strong>3.</strong></div><p>Shelf Academy</p></div>
-          <div class="check"><div ><strong>3.</strong></div><p>COSA - Congresso de Odontologia e Saúde do Amazonas</p></div>
+        <p>O <strong>Grupo Shelf</strong> atua em diversos ramos do mercado na região Norte, com <strong>cinco
+            unidades</strong> de negócio comercialmente consolidadas. Nossa missão é <strong>desenvolver marcas e
+            ampliar o acesso a soluções essenciais</strong>, conectando fornecedores, logística e atendimento com
+          eficiência, qualidade e confiança. Trabalhamos para gerar valor sustentável a clientes, parceiros e à
+          comunidade, mantendo foco em disponibilidade, preço justo e serviço responsável. <br>
+          <strong>#GrupoShelf #Distribuição #Saúde</strong>
+        </p>
+
+        <div style="display:grid; margin-top:10px">
+          <div class="check">
+            <div><strong>1.</strong></div>
+            <p>Shelf Distribuidora</p>
+          </div>
+          <div class="check">
+            <div><strong>2.</strong></div>
+            <p>Shelf Dental Med</p>
+          </div>
+          <div class="check">
+            <div><strong>3.</strong></div>
+            <p>Soberana Distribuidora</p>
+          </div>
+          <div class="check">
+            <div><strong>3.</strong></div>
+            <p>Shelf Academy</p>
+          </div>
+          <div class="check">
+            <div><strong>3.</strong></div>
+            <p>COSA - Congresso de Odontologia e Saúde do Amazonas</p>
+          </div>
         </div>
-        -->
+
       </div>
       <div class="right card">
         <div class="mock"></div>
+        <div class="meta">COSA - Congresso de Odontologia e Saúde do Amazonas</div>
+        <h3 style="margin:4px 0 6px">Ensino & Tradição</h3>
+        <p class="muted">Congresso de Odontologia e Saúde do Amazonas é um evento anual que conecta profissionais,
+          estudantes, gestores e a cadeia de fornecedores da Região Norte. Com conteúdo científico de alto nível,
+          trilhas práticas e feira de negócios, o COSA promove atualização técnica, integração entre odontologia e saúde
+          e o avanço do cuidado na Amazônia.</p>
       </div>
     </div>
   </section>
@@ -245,7 +752,9 @@
           <div class="body">
             <div class="meta">Shelf Dental Med</div>
             <h3 style="margin:4px 0 6px">Odontologia & Inovação</h3>
-            <p class="muted">Loja física especializada em produtos odontológicos e hospitalares. Em breve inaugura seu site de vendas, com grande potencial para tornar-se um dos maiores do mercado, unindo variedade, preço competitivo e logística eficiente.</p>
+            <p class="muted">Loja física especializada em produtos odontológicos e hospitalares. Em breve inaugura seu
+              site de vendas, com grande potencial para tornar-se um dos maiores do mercado, unindo variedade, preço
+              competitivo e logística eficiente.</p>
           </div>
         </article>
         <article class="mini">
@@ -253,7 +762,10 @@
           <div class="body">
             <div class="meta">Shelf Distribuidora</div>
             <h3 style="margin:4px 0 6px">Distribuição & Logística</h3>
-            <p class="muted">Operação B2B multissegmento para clientes públicos e privados. Processos padronizados, rastreabilidade e prazos firmes para abastecimento de clínicas, hospitais e varejo.<br><br><a href="https://shelfdistribuidora.com.br/" style="color: #1f5be0;float: right;margin-right: 15px;">Acesse Aqui</a>
+            <p class="muted">Operação B2B multissegmento para clientes públicos e privados. Processos padronizados,
+              rastreabilidade e prazos firmes para abastecimento de clínicas, hospitais e varejo.<br><br><a
+                href="https://shelfdistribuidora.com.br/" style="color: #1f5be0;float: right;margin-right: 15px;">Acesse
+                Aqui</a>
             </p>
             <a href=""></a>
           </div>
@@ -263,7 +775,8 @@
           <div class="body">
             <div class="meta">Soberana Distribuidora</div>
             <h3 style="margin:4px 0 6px">Consumo & Alimentos</h3>
-            <p class="muted">Linha de alimentos e conveniência com foco em qualidade e segurança. Portfólio pensado para o dia a dia, com controle e conformidade sanitária.</p>
+            <p class="muted">Linha de alimentos e conveniência com foco em qualidade e segurança. Portfólio pensado para
+              o dia a dia, com controle e conformidade sanitária.</p>
           </div>
         </article>
         <article class="mini">
@@ -271,7 +784,8 @@
           <div class="body">
             <div class="meta">Shelf Academy</div>
             <h3 style="margin:4px 0 6px">Educação & Impacto</h3>
-            <p class="muted">Cursos presenciais em Odontologia, com prática clínica, turmas reduzidas e vagas limitadas. Conteúdo objetivo, professores convidados e certificação ao final, com preços acessíveis.</p>
+            <p class="muted">Cursos presenciais em Odontologia, com prática clínica, turmas reduzidas e vagas limitadas.
+              Conteúdo objetivo, professores convidados e certificação ao final, com preços acessíveis.</p>
           </div>
         </article>
       </div>
@@ -282,24 +796,32 @@
   <section class="con" style="margin-top:18px">
     <div class="features js-drag">
       <div class="feat">
-        <div class="media" style="--bg:url('imagem-historia.jpg')"></div>
+        <div class="media" style="--bg:url('historia.svg')"></div>
         <h3>História</h3>
-        <p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="muted">Nasceu em Manaus conectando fornecedores e serviços essenciais na Região Norte. Cresceu de
+          forma sustentável, estruturando 5 unidades de negócio e parcerias que ampliam o acesso a produtos
+          odontológicos, hospitalares e EPI’s, sempre com foco em qualidade e disponibilidade.</p>
       </div>
       <div class="feat">
-        <div class="media" style="--bg:url('imagem-cultura.jpg')"></div>
+        <div class="media" style="--bg:url('cultura.svg')"></div>
         <h3>Cultura</h3>
-        <p class="muted">Integer posuere augue a semper faucibus, mauris nibh posuere.</p>
+        <p class="muted">Gente que cuida e entrega. Valorizamos integridade, agilidade e simplicidade, respeito às
+          pessoas, segurança do paciente e aprendizado contínuo. Trabalhamos próximos do cliente, com comunicação clara
+          e compromisso com resultados.</p>
       </div>
       <div class="feat">
-        <div class="media" style="--bg:url('imagem-estrategia.jpg')"></div>
+        <div class="media" style="--bg:url('estrategia.svg')"></div>
         <h3>Estratégia</h3>
-        <p class="muted">Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+        <p class="muted">Pilares: disponibilidade (estoque e logística), tecnologia & dados (processos digitais e
+          integração), parcerias e marcas (portfólio competitivo), eficiência operacional e expansão regional. O
+          e-commerce e os canais institucionais consolidam a presença do Grupo.</p>
       </div>
       <div class="feat">
-        <div class="media" style="--bg:url('imagem-responsabilidade.jpg')"></div>
+        <div class="media" style="--bg:url('responsabilidades.svg')"></div>
         <h3>Responsabilidade</h3>
-        <p class="muted">Donec elementum arcu eros gravida nisi sed viverra.</p>
+        <p class="muted">Operamos com ética, conformidade e LGPD, segurança em toda a cadeia e práticas de
+          sustentabilidade. Incentivamos formação por meio da Shelf Academy e apoiamos iniciativas de impacto social
+          para saúde e educação na Amazônia.</p>
       </div>
     </div>
   </section>
@@ -310,10 +832,30 @@
     <div class="grid" style="margin-top:10px">
       <div class="card" style="grid-column:span 12">
         <div class="faq" style="display:grid; gap:10px">
-          <details class="item"><summary>Qual é o propósito do Grupo Shelf?</summary><div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere augue a semper faucibus.</div></details>
-          <details class="item"><summary>Em quais áreas o grupo atua?</summary><div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus.</div></details>
-          <details class="item"><summary>Como falar com o setor institucional?</summary><div class="content">Envie uma mensagem pelo formulário abaixo. Os canais oficiais serão exibidos sem fins comerciais.</div></details>
-          <details class="item"><summary>Há políticas de privacidade e governança?</summary><div class="content">Sim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies risus id pulvinar porta.</div></details>
+          <details class="item">
+            <summary>Qual é o propósito do Grupo Shelf?</summary>
+            <div style="color: #1f5be0;" class="content">Ampliar o acesso a soluções essenciais em saúde e bem-estar, conectando marcas,
+              logística e atendimento com eficiência, qualidade e confiança.</div>
+          </details>
+          <details class="item">
+            <summary>Em quais áreas o grupo atua?</summary>
+            <div style="color: #1f5be0;" class="content">Distribuição odontológica e hospitalar, EPI’s e soluções correlatas. O Grupo reúne
+              unidades de negócio complementares que atendem clientes públicos e privados na Região Norte.</div>
+          </details>
+          <details class="item">
+            <summary>Como entro em contato?</summary>
+            <div style="color: #1f5be0;" class="content">Nos envie mensagem pelo email: <a
+                href="mailto:gruposhelf@gmail.com?subject=Contato%20Institucional&body=Olá%20Grupo%20Shelf,">
+                gruposhelf@gmail.com
+              </a>
+            </div>
+          </details>
+          <details class="item">
+            <summary>Há políticas de privacidade e governança?</summary>
+            <div style="color: #1f5be0;" class="content">Sim. Operamos sob políticas de privacidade, LGPD e compliance, com controles de
+              qualidade, segurança da informação e governança corporativa. Documentos podem ser solicitados ao setor
+              institucional.</div>
+          </details> <a href=""></a>
         </div>
       </div>
     </div>
@@ -328,8 +870,8 @@
     document.getElementById('y').textContent = new Date().getFullYear();
 
     // Toggle do menu mobile (drawer lateral)
-    const nav  = document.querySelector('.nav');
-    const btn  = document.querySelector('.menu-btn');
+    const nav = document.querySelector('.nav');
+    const btn = document.querySelector('.menu-btn');
     const menu = document.getElementById('site-menu');
     btn.addEventListener('click', () => {
       const opened = nav.classList.toggle('open');
@@ -348,19 +890,17 @@
     document.querySelectorAll('.js-drag').forEach(container => {
       let isDown = false, startX = 0, scrollLeft = 0;
       const start = (x) => { isDown = true; startX = x; scrollLeft = container.scrollLeft; container.classList.add('dragging'); };
-      const move  = (x) => { if(!isDown) return; const dx = x - startX; container.scrollLeft = scrollLeft - dx; };
-      const end   = () => { isDown = false; container.classList.remove('dragging'); };
+      const move = (x) => { if (!isDown) return; const dx = x - startX; container.scrollLeft = scrollLeft - dx; };
+      const end = () => { isDown = false; container.classList.remove('dragging'); };
       container.addEventListener('mousedown', e => start(e.pageX));
       container.addEventListener('mousemove', e => move(e.pageX));
       container.addEventListener('mouseleave', end);
       container.addEventListener('mouseup', end);
-      container.addEventListener('touchstart', e => start(e.touches[0].pageX), {passive:true});
-      container.addEventListener('touchmove',  e => move(e.touches[0].pageX),  {passive:true});
+      container.addEventListener('touchstart', e => start(e.touches[0].pageX), { passive: true });
+      container.addEventListener('touchmove', e => move(e.touches[0].pageX), { passive: true });
       container.addEventListener('touchend', end);
     });
   </script>
 </body>
+
 </html>
-
-
-
